@@ -4,61 +4,63 @@ hide:
   - toc
 ---
 
-# Your Name
+# Courtney Avioli
 
-## Technical Writer
+## Mechanical Engineer
 
-I write clear, task-focused documentation for hardware and software products. My work spans developer-facing references, end-user tutorials, and troubleshooting guides for technical audiences.
+I am a mechanical engineer with an interest in marine technology, embedded systems, and technical writing. This portfolio is a work in progress and is built to document my personal work.
 
-This portfolio collects writing samples across formats and complexity levels.
+[LinkedIn](https://linkedin.com/in/courtneyavioli){ .md-button .md-button--primary }
+[GitHub](https://github.com/court-av){ .md-button }
 
-[Get in touch](mailto:you@example.com){ .md-button .md-button--primary }
-[View on GitHub](https://github.com/yourusername){ .md-button }
+## Navigation
+
+The "Projects" section details projects and builds of mine at a high-level.
+The "Guides" section is full of technical writing for processes, or projects that I have completed in a high level of detail, designed for beginners to follow along to.
 
 ---
 
-## Writing Samples
+## Projects
 
 <div class="grid cards" markdown>
 
--   :material-rocket-launch:{ .lg .middle } **Getting Started Tutorial**
+-   :material-rocket-launch:{ .lg .middle } **Project Example**
 
     ---
 
-    A task-focused quickstart guide walking new users through their first successful setup.
+    This is a project example.
 
-    [:octicons-arrow-right-24: Read sample](tutorials/getting-started.md)
-
--   :material-book-open-variant:{ .lg .middle } **API Reference**
-
-    ---
-
-    Structured reference documentation with parameters, return values, and worked examples.
-
-    [:octicons-arrow-right-24: Read sample](reference/api.md)
-
--   :material-wrench:{ .lg .middle } **Troubleshooting Guide**
-
-    ---
-
-    Symptom-driven diagnostic guide organized by failure mode with step-by-step resolutions.
-
-    [:octicons-arrow-right-24: Read sample](troubleshooting/common-issues.md)
-
--   :material-lightbulb-on:{ .lg .middle } **Conceptual Explainer**
-
-    ---
-
-    A plain-language explanation of a technical concept aimed at curious non-experts.
-
-    [:octicons-arrow-right-24: Read sample](concepts/overview.md)
+    [:octicons-arrow-right-24: Read sample](projects/project.md)
 
 </div>
 
----
+## Guides
 
-## About
+<div class="grid cards" markdown>
 
-Brief paragraph about your background, the kinds of products you've documented, and what you're looking for. Two to four sentences is plenty — the samples speak for themselves.
+-   :material-rocket-launch:{ .lg .middle } **Set Up Your Own Website Through MkDocs**
 
-I'm currently exploring opportunities in technical writing for hardware and embedded systems teams. If you'd like to talk, reach me at [you@example.com](mailto:you@example.com).
+    ---
+
+    Learn how to create your very own website with a custom domain.
+
+    [:octicons-arrow-right-24: Read more](guides/website_setup_mkdocs.md)
+
+-   :material-book-open-variant:{ .lg .middle } **Configuring an e-Paper Display on Raspberry Pi**
+
+    ---
+
+    The opportunities of e-Paper are limitless when you pair it with a Raspberry Pi. Learn how to use a Waveshare IT8951 screen with a Raspberry Pi 4.
+
+    [:octicons-arrow-right-24: Read more](guides/epaper_pi.md)
+
+-   :material-lightbulb-on:{ .lg .middle } **Creating an Exploded Assembly Drawing in SolidWorks**
+
+    ---
+
+    Create detailed assembly steps and procedures accompanied by exploded assembly views.
+
+    [:octicons-arrow-right-24: Read more](guides/exploded_assembly.md)
+
+</div>
+

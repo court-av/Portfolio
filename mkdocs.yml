@@ -1,10 +1,10 @@
-site_name: Your Name
-site_description: Technical writing portfolio
-site_author: Your Name
-site_url: https://yourusername.github.io/your-repo-name/
+site_name: Courtney Avioli
+site_description: Portfolio
+site_author: Courtney Avioli
+site_url: https://court-av.github.io/Portfolio/
 
-repo_url: https://github.com/yourusername/your-repo-name
-repo_name: View source
+repo_url: https://github.com/court-av/Portfolio
+repo_name: Courtney's Github
 
 theme:
   name: material
@@ -60,21 +60,17 @@ markdown_extensions:
 
 nav:
   - Home: index.md
-  - Tutorials:
-    - Getting Started: tutorials/getting-started.md
-  - Reference:
-    - API Guide: reference/api.md
-  - Concepts:
-    - Overview: concepts/overview.md
-  - Troubleshooting:
-    - Common Issues: troubleshooting/common-issues.md
+  - Projects:
+    - Sample Project: projects/project.md
+  - Technical Writing Examples:
+    - Set Up Your Own Website Through MkDocs: guides/website_setup_mkdocs.md
+    - Configuring an e-Paper Display on Raspberry Pi: guides/epaper_pi.md
+    - Creating an Exploded Assembly Drawing in SolidWorks: guides/exploded_assembly.md
 
 extra:
   social:
     - icon: fontawesome/brands/github
-      link: https://github.com/yourusername
+      link: https://github.com/court-av
     - icon: fontawesome/brands/linkedin
-      link: https://linkedin.com/in/yourusername
-    - icon: fontawesome/solid/envelope
-      link: mailto:you@example.com
-  generator: false
+      link: https://linkedin.com/in/courtneyavioli
+  generator: true
