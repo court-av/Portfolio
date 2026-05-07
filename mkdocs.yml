@@ -1,0 +1,26 @@
+site_name: Your Name - Technical Writing Portfolio
+theme:
+  name: material
+  features:
+    - navigation.tabs
+    - navigation.sections
+    - content.code.copy
+  palette:
+    - scheme: default
+      primary: blue
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+    - scheme: slate
+      primary: blue
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+nav:
+  - Home: index.md
+  - Tutorials:
+    - Getting Started: tutorials/getting-started.md
+  - Reference:
+    - API Guide: reference/api.md
+  - Troubleshooting:
+    - Common Issues: troubleshooting/common-issues.md
