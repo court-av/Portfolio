@@ -1,0 +1,112 @@
+/* Refined typography */
+.md-typeset {
+  font-size: 0.78rem;
+  line-height: 1.7;
+}
+
+.md-typeset h1 {
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  margin-bottom: 0.4em;
+}
+
+.md-typeset h2 {
+  font-weight: 600;
+  letter-spacing: -0.01em;
+  margin-top: 2em;
+}
+
+.md-typeset h3 {
+  font-weight: 600;
+  margin-top: 1.5em;
+}
+
+/* Homepage hero spacing */
+.md-typeset h1 + h2 {
+  margin-top: -0.2em;
+  font-weight: 400;
+  color: var(--md-default-fg-color--light);
+  font-size: 1.4rem;
+}
+
+/* Better button spacing on homepage */
+.md-typeset .md-button + .md-button {
+  margin-left: 0.5rem;
+}
+
+/* Card grid polish */
+.md-typeset .grid.cards > :is(ul, ol) > li,
+.md-typeset .grid > .card {
+  border-radius: 8px;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.md-typeset .grid.cards > :is(ul, ol) > li:hover,
+.md-typeset .grid > .card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
+}
+
+/* Subtle horizontal rules */
+.md-typeset hr {
+  border-bottom: 1px solid var(--md-default-fg-color--lightest);
+  margin: 2.5em 0;
+}
+
+/* Code block refinement */
+.md-typeset code {
+  font-size: 0.85em;
+  border-radius: 4px;
+}
+
+/* Cleaner admonitions */
+.md-typeset .admonition,
+.md-typeset details {
+  border-radius: 6px;
+  border-width: 0 0 0 4px;
+  box-shadow: none;
+}
+
+/* Header refinement */
+.md-header {
+  box-shadow: 0 1px 0 rgba(0, 0, 0, 0.05);
+}
+
+/* Footer cleanup */
+.md-footer-meta {
+  background-color: var(--md-default-bg-color);
+  color: var(--md-default-fg-color--light);
+  border-top: 1px solid var(--md-default-fg-color--lightest);
+}
+
+/* Max content width for better readability */
+.md-grid {
+  max-width: 1280px;
+}
+
+.badge {
+  display: inline-block;
+  padding: 0.15em 0.6em;
+  font-size: 0.75em;
+  font-weight: 600;
+  line-height: 1.4;
+  border-radius: 12px;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+  vertical-align: middle;
+}
+
+.badge-beginner {
+  background-color: #dcfce7;
+  color: #166534;
+}
+
+.badge-intermediate {
+  background-color: #fef3c7;
+  color: #92400e;
+}
+
+.badge-advanced {
+  background-color: #fee2e2;
+  color: #991b1b;
+}
