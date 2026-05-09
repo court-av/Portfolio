@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+    <url>
+         <loc>https://court-av.github.io/Portfolio/</loc>
+         <lastmod>2026-05-09</lastmod>
+    </url>
+    <url>
+         <loc>https://court-av.github.io/Portfolio/guides/epaper_pi/</loc>
+         <lastmod>2026-05-09</lastmod>
+    </url>
+    <url>
+         <loc>https://court-av.github.io/Portfolio/guides/exploded_assembly/</loc>
+         <lastmod>2026-05-09</lastmod>
+    </url>
+    <url>
+         <loc>https://court-av.github.io/Portfolio/guides/website_setup_mkdocs/</loc>
+         <lastmod>2026-05-09</lastmod>
+    </url>
+    <url>
+         <loc>https://court-av.github.io/Portfolio/projects/project/</loc>
+         <lastmod>2026-05-09</lastmod>
+    </url>
+</urlset>

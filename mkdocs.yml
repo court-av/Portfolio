@@ -8,6 +8,7 @@ repo_name: Courtney's Github
 
 theme:
   name: material
+  custom_dir: overrides
   font:
     text: Inter
     code: JetBrains Mono
@@ -64,8 +65,8 @@ markdown_extensions:
 nav:
   - Home: index.md
   - Projects:
-    - Sample Project: projects/project.md
-  - Technical Writing Examples:
+    - Sample Project: projects/eReader.md
+  - Guides:
     - Set Up Your Own Website: guides/website_setup_mkdocs.md
     - Configuring an e-Paper Display on Raspberry Pi: guides/epaper_pi.md
     - Creating an Exploded Assembly Drawing in SolidWorks: guides/exploded_assembly.md

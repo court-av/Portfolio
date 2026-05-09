@@ -20,6 +20,8 @@ To get started, you will need to install Python, MkDocs Materials, and Git for W
 
 1. Open Command Prompt. Search it in your Windows search bar or press Win+R, type `cmd`, then hit Enter.
 
+![Command Prompt Window](images/command_prompt_open.png)
+
 2. Check for a Python installation. Run this in the Command Prompt:
 
     ````batch
@@ -30,9 +32,15 @@ To get started, you will need to install Python, MkDocs Materials, and Git for W
 
 3. If you need to install Python, go to <python.org/downloads> and download the latest stable 64-bit Windows installation.
 
+    ![Python Downloads Page](images/python_installation.png)
+
     During installation, check "Add Python to PATH."
 
+    ![Python Installation Window with checked "Add Python to PATH"](images/python_installer.png)
+
     After the installation is complete, close and reopen the Command Prompt and verify with `python --version`.
+
+    ![Python installation checked with Command Prompt](images/python_installed.png)
 
 4. Install MkDocs material. In the Command Prompt, enter:
 
@@ -41,6 +49,8 @@ To get started, you will need to install Python, MkDocs Materials, and Git for W
     ````
 
 5. Install Git for Windows. Download the latest stable 64-bit version from <https://git-scm.com/install/windows>. Use the default installation settings.
+
+    ![Git for Windows downloads page](images/git_for_windows_install_page.png)
 
 ## Initial Website Deployment
 The initial deployment of your very first website is easy.
@@ -217,6 +227,7 @@ The initial deployment of your very first website is easy.
     </div>
     
     ````
+
 5. Create a path in your folder in your repository called "stylesheets" and create a new file named "extra.css". Paste this code into it:
 
     ````css title="extra.css"
@@ -377,11 +388,15 @@ The initial deployment of your very first website is easy.
 
 9. Configure GitHub Pages. Go to your repository in your browser. In Settings, go to "Pages". Under the "Source" dropdown, select "Deploy from a branch". Under the "Branch" dropdown, select "gh-pages".
 
+    ![Change your Github Settings for Deployment](images/github_pages.png)
+
     At this point, your site should be live at https://username.github.io/repository-name. Edit with your username and repository name.
 
-## Best Practices
+    Congratulations! You have your very own website that you can customize. Use the tools below to modify and customize your website.
 
-These steps created your initial deployment of your website. Any modifications you make past this point will need to be committed and pushed to your github and redeployed.
+!!! note "These steps created your initial deployment of your website. Any modifications you make past this point will need to be committed and pushed to your github and redeployed."
+
+## Best Practices
 
 ### Testing
 
@@ -441,6 +456,7 @@ Numbered lists are created using(1., 2., 3., etc.). To group text within a numbe
 ````md
 1. This is an example first step.
     An indent groups this sentence under step one.
+
 2. This is step two.
 ````
 
@@ -496,9 +512,33 @@ To make the boxes collapsible, change the `!!!` to `???`.
 
 ## Blocking Search Engines
 
-To prevent your website from being searchable on search engines, you can add a "no-index" tag.
+To prevent your website from being searchable on search engines and AI training crawlers, you can add a "no-index" tag.
 
+1. Create a folder called `overrides` in your project root. 
 
+2. Add a `custom_dir` to your `mkdocs.yml`:
+    ````yml
+    theme:
+        name: material
+        custom_dir: overrides
+    ````
+
+3. Create a file in `overrides` called `main.html`.
+    ````html title="main.html"
+    {% extends "base.html" %}
+
+    {% block extrahead %}
+    <meta name="robots" content="noindex, nofollow">
+    {% endblock %}
+    ````
+
+4. In your `docs` directory, create a file called `robots.txt`
+    ````txt title="robots.txt"
+    User-agent: *
+    Disallow: /
+    ````
+
+Redeploy your website.
 
 ## Troubleshooting
 
@@ -514,7 +554,6 @@ To prevent your website from being searchable on search engines, you can add a "
     ````
     python -m pip install mkdocs-material
     ````
-    .
 
 - If mkdocs is not recognized, check your antivirus permissions to see if anything is blocking you.
 
@@ -524,4 +563,4 @@ If you get any pages that show up as "404 Not Found," there are several possible
 
 - Check that all .md file names in the `mkdocs.yml` and `index.md` are spelled correctly and in the correct file location.
 - Check that in your Github repository settings you set the Branch to "gh-pages" as in "Initial Deployment" Step 9.
-- If you made any changes to the code, you need to redeploy the test website. Make sure you enter `mkdocs serve` to view any recent edits to the code. To exit a current test deployment, use `crtl + C'.
+- If you made any changes to the code, you need to redeploy the test website. Make sure you enter `mkdocs serve` to view any recent edits to the code. To exit a current test deployment, use `crtl + C`.

@@ -8,15 +8,12 @@ hide:
 
 ## Mechanical Engineer
 
-I am a mechanical engineer with an interest in marine technology, embedded systems, and technical writing. This portfolio is a work in progress and is built to document my personal work.
+I am a mechanical engineer with an interest in marine technology, embedded systems, and technical writing. This portfolio is a :material-traffic-cone: WORK IN PROGRESS :material-traffic-cone: and is built to document my personal work. Check back soon for more Guides and Project documentation.
+
+I created a "Set Up Your Own Website" Guide that details how I made this website and teaches you how to do the same. Check it out below.
 
 [LinkedIn](https://linkedin.com/in/courtneyavioli){ .md-button .md-button--primary }
 [GitHub](https://github.com/court-av){ .md-button }
-
-## Navigation
-
-The "Projects" section details projects and builds of mine at a high-level.
-The "Guides" section is full of technical writing for processes, or projects that I have completed in a high level of detail, designed for beginners to follow along to.
 
 ---
 
@@ -24,13 +21,13 @@ The "Guides" section is full of technical writing for processes, or projects tha
 
 <div class="grid cards" markdown>
 
--   :material-rocket-launch:{ .lg .middle } **Project Example**
+-   :material-rocket-launch:{ .lg .middle } **Designing and Building my Own E-Reader**
 
     ---
 
-    This is a project example.
+    Project documentation coming soon!
 
-    [:octicons-arrow-right-24: Read more](projects/project.md)
+    [:octicons-arrow-right-24: Read more](projects/eReader.md)
 
 </div>
 
@@ -41,22 +38,31 @@ The "Guides" section is full of technical writing for processes, or projects tha
 -   :material-book-open-variant:{ .lg .middle } **Set Up Your Own Website**
 
     ---
+    **:material-trending-up: Skill Level:** <span class="badge badge-beginner">Beginner</span>
 
-    Learn how to create your very own website with a custom domain.
+    **:material-clock-outline: Time:** 45 minutes
+
+    Learn how to create your very own website.
 
     [:octicons-arrow-right-24: Read more](guides/website_setup_mkdocs.md)
 
--   :material-book-open-variant:{ .lg .middle } **Configuring an e-Paper Display on Raspberry Pi**
+-   :material-book-open-variant:{ .lg .middle } **Configure an e-Paper Display on Raspberry Pi**
 
     ---
+    **:material-trending-up: Skill Level:** <span class="badge badge-intermediate">Intermediate</span>
+
+    **:material-clock-outline: Time:** 60 minutes
 
     The opportunities of e-Paper are limitless when you pair it with a Raspberry Pi. Learn how to use a Waveshare IT8951 screen with a Raspberry Pi 4.
 
     [:octicons-arrow-right-24: Read more](guides/epaper_pi.md)
 
--   :material-book-open-variant:{ .lg .middle } **Creating an Exploded Assembly Drawing in SolidWorks**
+-   :material-book-open-variant:{ .lg .middle } **Create an Exploded Assembly Drawing in SolidWorks**
 
     ---
+    **:material-trending-up: Skill Level:** <span class="badge badge-beginner">Beginner</span>
+
+    **:material-clock-outline: Time:** 30 minutes
 
     Create detailed assembly steps and procedures accompanied by exploded assembly views.
 
