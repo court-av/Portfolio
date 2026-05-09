@@ -15,7 +15,7 @@
         <link rel="canonical" href="https://court-av.github.io/Portfolio/guides/website_setup_mkdocs/">
       
       
-        <link rel="prev" href="../../projects/project/">
+        <link rel="prev" href="../../projects/eReader/">
       
       
         <link rel="next" href="../epaper_pi/">
@@ -63,6 +63,8 @@
 
     
     
+  <meta name="robots" content="noindex, nofollow">
+
   </head>
   
   
@@ -250,7 +252,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../projects/project/" class="md-tabs__link">
+        <a href="../../projects/eReader/" class="md-tabs__link">
           
   
   
@@ -276,7 +278,7 @@
           
   
   
-  Technical Writing Examples
+  Guides
 
         </a>
       </li>
@@ -415,7 +417,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../projects/project/" class="md-nav__link">
+      <a href="../../projects/eReader/" class="md-nav__link">
         
   
   
@@ -478,7 +480,7 @@
   <span class="md-ellipsis">
     
   
-    Technical Writing Examples
+    Guides
   
 
     
@@ -494,7 +496,7 @@
             <span class="md-nav__icon md-icon"></span>
             
   
-    Technical Writing Examples
+    Guides
   
 
           </label>
@@ -1067,9 +1069,10 @@
 <h2 id="software-installation">Software Installation<a class="headerlink" href="#software-installation" title="Permanent link">&para;</a></h2>
 <p>To get started, you will need to install Python, MkDocs Materials, and Git for Windows.</p>
 <ol>
-<li>
-<p>Open Command Prompt. Search it in your Windows search bar or press Win+R, type <code>cmd</code>, then hit Enter.</p>
-</li>
+<li>Open Command Prompt. Search it in your Windows search bar or press Win+R, type <code>cmd</code>, then hit Enter.</li>
+</ol>
+<p><img alt="Command Prompt Window" src="../images/command_prompt_open.png" /></p>
+<ol>
 <li>
 <p>Check for a Python installation. Run this in the Command Prompt:</p>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>python --version
@@ -1078,8 +1081,11 @@
 </li>
 <li>
 <p>If you need to install Python, go to <python.org/downloads> and download the latest stable 64-bit Windows installation.</p>
+<p><img alt="Python Downloads Page" src="../images/python_installation.png" /></p>
 <p>During installation, check "Add Python to PATH."</p>
+<p><img alt="Python Installation Window with checked &quot;Add Python to PATH&quot;" src="../images/python_installer.png" /></p>
 <p>After the installation is complete, close and reopen the Command Prompt and verify with <code>python --version</code>.</p>
+<p><img alt="Python installation checked with Command Prompt" src="../images/python_installed.png" /></p>
 </li>
 <li>
 <p>Install MkDocs material. In the Command Prompt, enter:</p>
@@ -1088,6 +1094,7 @@
 </li>
 <li>
 <p>Install Git for Windows. Download the latest stable 64-bit version from <a href="https://git-scm.com/install/windows">https://git-scm.com/install/windows</a>. Use the default installation settings.</p>
+<p><img alt="Git for Windows downloads page" src="../images/git_for_windows_install_page.png" /></p>
 </li>
 </ol>
 <h2 id="initial-website-deployment">Initial Website Deployment<a class="headerlink" href="#initial-website-deployment" title="Permanent link">&para;</a></h2>
@@ -1201,7 +1208,7 @@
 </li>
 <li>
 <p>Replace index.md with the following code block.</p>
-<p><div class="highlight"><span class="filename">index.md</span><pre><span></span><code><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a>---
+<div class="highlight"><span class="filename">index.md</span><pre><span></span><code><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a>---
 <a id="__codelineno-5-2" name="__codelineno-5-2" href="#__codelineno-5-2"></a>hide:
 <a id="__codelineno-5-3" name="__codelineno-5-3" href="#__codelineno-5-3"></a><span class="w">  </span><span class="k">-</span><span class="w"> </span>navigation
 <a id="__codelineno-5-4" name="__codelineno-5-4" href="#__codelineno-5-4"></a><span class="gu">  - toc</span>
@@ -1262,7 +1269,9 @@
 <a id="__codelineno-5-59" name="__codelineno-5-59" href="#__codelineno-5-59"></a>
 <a id="__codelineno-5-60" name="__codelineno-5-60" href="#__codelineno-5-60"></a>&lt;/div&gt;
 </code></pre></div>
-5. Create a path in your folder in your repository called "stylesheets" and create a new file named "extra.css". Paste this code into it:</p>
+</li>
+<li>
+<p>Create a path in your folder in your repository called "stylesheets" and create a new file named "extra.css". Paste this code into it:</p>
 <div class="highlight"><span class="filename">extra.css</span><pre><span></span><code><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a><span class="c">/* Refined typography */</span>
 <a id="__codelineno-6-2" name="__codelineno-6-2" href="#__codelineno-6-2"></a><span class="p">.</span><span class="nc">md-typeset</span><span class="w"> </span><span class="p">{</span>
 <a id="__codelineno-6-3" name="__codelineno-6-3" href="#__codelineno-6-3"></a><span class="k">font-size</span><span class="p">:</span><span class="w"> </span><span class="mf">0.78</span><span class="kt">rem</span><span class="p">;</span>
@@ -1416,11 +1425,15 @@ When you do <code>git push -u origin main</code>, you will get directed to a Git
 </li>
 <li>
 <p>Configure GitHub Pages. Go to your repository in your browser. In Settings, go to "Pages". Under the "Source" dropdown, select "Deploy from a branch". Under the "Branch" dropdown, select "gh-pages".</p>
+<p><img alt="Change your Github Settings for Deployment" src="../images/github_pages.png" /></p>
 <p>At this point, your site should be live at https://username.github.io/repository-name. Edit with your username and repository name.</p>
+<p>Congratulations! You have your very own website that you can customize. Use the tools below to modify and customize your website.</p>
 </li>
 </ol>
+<div class="admonition note">
+<p class="admonition-title">These steps created your initial deployment of your website. Any modifications you make past this point will need to be committed and pushed to your github and redeployed.</p>
+</div>
 <h2 id="best-practices">Best Practices<a class="headerlink" href="#best-practices" title="Permanent link">&para;</a></h2>
-<p>These steps created your initial deployment of your website. Any modifications you make past this point will need to be committed and pushed to your github and redeployed.</p>
 <h3 id="testing">Testing<a class="headerlink" href="#testing" title="Permanent link">&para;</a></h3>
 <p>While testing new code, do not create a new deployment. Use a test deployment by entering <code>mkdocs serve</code> in your Command Prompt. Use <code>ctrl + C</code> to shutdown the current test deployment. The test deployment can be viewed at <a href="http://127.0.0.1:8000">http://127.0.0.1:8000</a>.</p>
 <h3 id="deployment">Deployment<a class="headerlink" href="#deployment" title="Permanent link">&para;</a></h3>
@@ -1453,7 +1466,8 @@ When you do <code>git push -u origin main</code>, you will get directed to a Git
 <p>Numbered lists are created using(1., 2., 3., etc.). To group text within a number on the list, indent the text under each number. For example:</p>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-14-1" name="__codelineno-14-1" href="#__codelineno-14-1"></a><span class="k">1.</span> This is an example first step.
 <a id="__codelineno-14-2" name="__codelineno-14-2" href="#__codelineno-14-2"></a>    An indent groups this sentence under step one.
-<a id="__codelineno-14-3" name="__codelineno-14-3" href="#__codelineno-14-3"></a><span class="k">2.</span> This is step two.
+<a id="__codelineno-14-3" name="__codelineno-14-3" href="#__codelineno-14-3"></a>
+<a id="__codelineno-14-4" name="__codelineno-14-4" href="#__codelineno-14-4"></a><span class="k">2.</span> This is step two.
 </code></pre></div>
 <h3 id="addingremoving-pages">Adding/Removing Pages<a class="headerlink" href="#addingremoving-pages" title="Permanent link">&para;</a></h3>
 <p>Create or delete .md files within your file structure. When you do so, don't forget to edit <code>mkdocs.yml</code> and <code>index.md</code> to change your home page and menu tabs.</p>
@@ -1490,18 +1504,45 @@ When you do <code>git push -u origin main</code>, you will get directed to a Git
 <p>This is what an expandable example looks like.</p>
 </details>
 <h2 id="blocking-search-engines">Blocking Search Engines<a class="headerlink" href="#blocking-search-engines" title="Permanent link">&para;</a></h2>
-<p>To prevent your website from being searchable on search engines, you can add a "no-index" tag.</p>
+<p>To prevent your website from being searchable on search engines and AI training crawlers, you can add a "no-index" tag.</p>
+<ol>
+<li>
+<p>Create a folder called <code>overrides</code> in your project root. </p>
+</li>
+<li>
+<p>Add a <code>custom_dir</code> to your <code>mkdocs.yml</code>:
+    <div class="highlight"><pre><span></span><code><a id="__codelineno-18-1" name="__codelineno-18-1" href="#__codelineno-18-1"></a>theme:
+<a id="__codelineno-18-2" name="__codelineno-18-2" href="#__codelineno-18-2"></a>    name: material
+<a id="__codelineno-18-3" name="__codelineno-18-3" href="#__codelineno-18-3"></a>    custom_dir: overrides
+</code></pre></div></p>
+</li>
+<li>
+<p>Create a file in <code>overrides</code> called <code>main.html</code>.
+    <div class="highlight"><span class="filename">main.html</span><pre><span></span><code><a id="__codelineno-19-1" name="__codelineno-19-1" href="#__codelineno-19-1"></a>{% extends &quot;base.html&quot; %}
+<a id="__codelineno-19-2" name="__codelineno-19-2" href="#__codelineno-19-2"></a>
+<a id="__codelineno-19-3" name="__codelineno-19-3" href="#__codelineno-19-3"></a>{% block extrahead %}
+<a id="__codelineno-19-4" name="__codelineno-19-4" href="#__codelineno-19-4"></a><span class="p">&lt;</span><span class="nt">meta</span> <span class="na">name</span><span class="o">=</span><span class="s">&quot;robots&quot;</span> <span class="na">content</span><span class="o">=</span><span class="s">&quot;noindex, nofollow&quot;</span><span class="p">&gt;</span>
+<a id="__codelineno-19-5" name="__codelineno-19-5" href="#__codelineno-19-5"></a>{% endblock %}
+</code></pre></div></p>
+</li>
+<li>
+<p>In your <code>docs</code> directory, create a file called <code>robots.txt</code>
+    <div class="highlight"><span class="filename">robots.txt</span><pre><span></span><code><a id="__codelineno-20-1" name="__codelineno-20-1" href="#__codelineno-20-1"></a>User-agent: *
+<a id="__codelineno-20-2" name="__codelineno-20-2" href="#__codelineno-20-2"></a>Disallow: /
+</code></pre></div></p>
+</li>
+</ol>
+<p>Redeploy your website.</p>
 <h2 id="troubleshooting">Troubleshooting<a class="headerlink" href="#troubleshooting" title="Permanent link">&para;</a></h2>
 <h3 id="installation-troubleshooting">Installation Troubleshooting<a class="headerlink" href="#installation-troubleshooting" title="Permanent link">&para;</a></h3>
 <ul>
 <li>
 <p>If you have issues with installing MkDocs material with</p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-18-1" name="__codelineno-18-1" href="#__codelineno-18-1"></a>pip install mkdocs-material
+<div class="highlight"><pre><span></span><code><a id="__codelineno-21-1" name="__codelineno-21-1" href="#__codelineno-21-1"></a>pip install mkdocs-material
 </code></pre></div>
 <p>try
-<div class="highlight"><pre><span></span><code><a id="__codelineno-19-1" name="__codelineno-19-1" href="#__codelineno-19-1"></a>python -m pip install mkdocs-material
-</code></pre></div>
-.</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-22-1" name="__codelineno-22-1" href="#__codelineno-22-1"></a>python -m pip install mkdocs-material
+</code></pre></div></p>
 </li>
 <li>
 <p>If mkdocs is not recognized, check your antivirus permissions to see if anything is blocking you.</p>
@@ -1512,7 +1553,7 @@ When you do <code>git push -u origin main</code>, you will get directed to a Git
 <ul>
 <li>Check that all .md file names in the <code>mkdocs.yml</code> and <code>index.md</code> are spelled correctly and in the correct file location.</li>
 <li>Check that in your Github repository settings you set the Branch to "gh-pages" as in "Initial Deployment" Step 9.</li>
-<li>If you made any changes to the code, you need to redeploy the test website. Make sure you enter <code>mkdocs serve</code> to view any recent edits to the code. To exit a current test deployment, use `crtl + C'.</li>
+<li>If you made any changes to the code, you need to redeploy the test website. Make sure you enter <code>mkdocs serve</code> to view any recent edits to the code. To exit a current test deployment, use <code>crtl + C</code>.</li>
 </ul>
 
 
