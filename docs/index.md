@@ -30,7 +30,7 @@ The "Guides" section is full of technical writing for processes, or projects tha
 
     This is a project example.
 
-    [:octicons-arrow-right-24: Read sample](projects/project.md)
+    [:octicons-arrow-right-24: Read more](projects/project.md)
 
 </div>
 
@@ -38,7 +38,7 @@ The "Guides" section is full of technical writing for processes, or projects tha
 
 <div class="grid cards" markdown>
 
--   :material-rocket-launch:{ .lg .middle } **Set Up Your Own Website Through MkDocs**
+-   :material-book-open-variant:{ .lg .middle } **Set Up Your Own Website**
 
     ---
 
@@ -54,7 +54,7 @@ The "Guides" section is full of technical writing for processes, or projects tha
 
     [:octicons-arrow-right-24: Read more](guides/epaper_pi.md)
 
--   :material-lightbulb-on:{ .lg .middle } **Creating an Exploded Assembly Drawing in SolidWorks**
+-   :material-book-open-variant:{ .lg .middle } **Creating an Exploded Assembly Drawing in SolidWorks**
 
     ---
 
